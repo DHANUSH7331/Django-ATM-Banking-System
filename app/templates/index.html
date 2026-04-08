@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <h1 id="Heading">Welcome to Bank of Paradise</h1>
+    <div>
+<div class="menu">
+    <a href="{% url 'acc' %}" class="card">
+        <img src="{% static 'images/acc.png' %}">
+        <span>Account Creation</span>
+    </a>
+
+    <a href="{% url 'pin' %}" class="card">
+        <img src="{% static 'images/pin.png' %}">
+        <span>Generate Pin</span>
+    </a>
+
+    <a href="{% url 'bal' %}" class="card">
+        <img src="{% static 'images/check.webp' %}">
+        <span>Check Balance</span>
+    </a>
+
+    <a href="{% url 'deposit' %}" class="card">
+        <img src="{% static 'images/deposit.png' %}">
+        <span>Deposit</span>
+    </a>
+
+    <a href="{% url 'withdraw' %}" class="card">
+        <img src="{% static 'images/withdraw.webp' %}">
+        <span>Withdraw</span>
+    </a>
+
+    <a href="{% url 'transfer' %}" class="card">
+        <img src="{% static 'images/transfer.png' %}">
+        <span>Transfer</span>
+    </a>
+</div>
+    </div>
+</body>
+</html>

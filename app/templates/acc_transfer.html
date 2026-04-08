@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/acc_transfer.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        From Account : <input type="text" name="f_acc"><br>
+        Pin : <input type="password" name="pin"><br>
+        To Account : <input type="text" name ="t_acc"><br>
+        Amount : <input type="number" name="amt" id="">
+        <button type="submit">Transfer</button>
+    </form>
+    {% for i in messages %}
+    <p>{{i}}</p>
+    {% endfor %}
+</body>
+</html>

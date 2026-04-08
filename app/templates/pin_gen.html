@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/pin_gen.css' %}">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1>Generate PIN</h1>
+            <label for="">Acc Number:</label>
+            <input type="number" name="acc" id=""><br><br>
+            <label for="">Aadhar Number:</label>
+            <input type="number" name="aadhar" id=""><br><br>
+            <label for="">Phone:</label>
+            <input type="number" name="phone" id=""><br><br>
+            <button type="submit">Generate OTP</button>
+        </form>
+        {% if msg %}
+        <p>{{msg}}</p>
+        {% endif %}
+    </body>
+    </html>

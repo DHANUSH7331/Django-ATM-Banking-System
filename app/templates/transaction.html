@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/transaction.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        Account Number : <input type="text" name="acc"><br>
+        Pin : <input type="password" name="pin"><br>
+        Amount : <input type="number" name="amt"><br>
+        <button type="submit">Deposit</button>
+    </form>
+    {% for i in messages %}
+    <p>{{i}}</p>
+    {% endfor %}
+</body>
+</html>

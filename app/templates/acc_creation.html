@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/acc_creation.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data" >
+        {% csrf_token %}
+        <h1>Create Your Account</h1>
+        <table>
+        <tr>
+            <td><label for="id_first_name">First Name:</label></td>
+            <td>{{form.first_name}}</td>
+        </tr>
+        <tr>
+            <td><label for="id_first_name">Last Name:</label></td>
+            <td>{{form.last_name}}</td>
+        </tr>
+        <tr>
+            <td><label for="id_email">Email:</label></td>
+            <td>{{form.email}}</td>
+        </tr>
+        <tr>
+            <td><label for="id_dob">Dob:</label></td>
+            <td>{{form.dob}}</td>
+        </tr>
+        <tr>
+            <td><label for="id_acc_number">Acc Number:</label></td>
+            <td>{{form.acc_num}}</td>
+        </tr>
+        <tr>
+            <td><label for="">Phone Number:</label></td>
+            <td>{{form.phone}}</td>
+        </tr>
+        <tr>
+            <td><label for="">Aadhar:</label></td>
+            <td>{{form.aadhar}}</td>
+        </tr>
+        <tr>
+            <td><label for="">Address:</label></td>
+            <td>{{form.address}}</td>
+        </tr>
+        <tr>
+            <td><label for="">State:</label></td>
+            <td>{{form.state}}</td>
+        </tr>
+        <tr>
+            <td><label for="">Gender:</label></td>
+            <td>{{form.gender}}</td>
+        </tr>
+        <tr>
+            <td><label for="">Acc Type:</label></td>
+            <td>{{form.acc_type}}</td>
+        </tr>
+        <tr>
+            <td><label for="">Nominee Name:</label></td>
+            <td>{{form.nomine_name}}</td>
+        </tr>
+        <tr>
+            <td><label for="">Realtion With Nominee:</label></td>
+            <td>{{form.relation}}</td>
+        </tr>
+        <tr>
+            <td>{{form1}}</td>
+        </tr>
+        </table>
+        <button type="submit">CREATE ACCOUNT</button>
+    </form>
+</body>
+</html>
