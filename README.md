@@ -1,3 +1,5 @@
+#  Bank Management System
+
 **🏦 Django ATM Banking System**
 
 A mini banking web application built using Django that simulates ATM-style operations such as account creation, OTP-based PIN generation, balance checking, deposit, withdrawal, and fund transfer.
@@ -40,35 +42,56 @@ Google reCAPTCHA	Bot Protection
 
 **📂 Project Structure**
 ATM-Banking-System/
+
 │
+
 ├── app/
+
 │   ├── models.py
+
 │   ├── views.py
+
 │   ├── forms.py
+
 │   ├── utils/
+
 │   │     └── otp.py
+
 │
+
 ├── templates/
+
 │   ├── index.html
+
 │   ├── acc_creation.html
+
 │   ├── pin_gen.html
+
 │   ├── valid.html
+
 │   ├── check.html
+
 │   ├── transaction.html
+
 │   └── acc_transfer.html
+
 │
-├── screenshots/
+
 ├── db.sqlite3
+
 └── manage.py
+
 
 **⚙️ Installation & Setup**
 
 1️⃣ Clone Repository
 git clone https://github.com/yourusername/django-atm-banking.git
 cd django-atm-banking
+
 2️⃣ Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate
+
 3️⃣ Install Dependencies
 pip install django
 pip install django-recaptcha
@@ -153,4 +176,4 @@ Improve UI with Bootstrap
 Add audit logging & security enhancements
 👨‍💻 Author
 
-Dhanush
+Dhanush Backend Developer
