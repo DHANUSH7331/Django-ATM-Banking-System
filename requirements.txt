@@ -1,5 +1,4 @@
 Django==6.0.3
-django-authentication==0.1.5
 django-braces==1.0.0
 django-extensions==1.1.1
 django-qr-code==4.2.0
