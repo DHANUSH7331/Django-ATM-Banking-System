@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-4byu*f=hw@+r+_-pth90sw3^6*39*03w$v)sfzqxk0hny(g5id
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "django-atm-banking-system.vercel.app"
+]
 
 
 # Application definition
