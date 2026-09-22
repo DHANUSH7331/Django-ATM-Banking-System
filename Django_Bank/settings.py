@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-4byu*f=hw@+r+_-pth90sw3^6*39*03w$v)sfzqxk0hny(g5id
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "django-atm-banking-system-h5f9ioh7s-dhanushs-projects-30e73582.vercel.app",
     "django-atm-banking-system-indtyld0a-dhanushs-projects-30e73582.vercel.app",
     "django-atm-banking-system.vercel.app",
     "localhost",
